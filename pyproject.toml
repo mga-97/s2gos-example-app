@@ -18,17 +18,19 @@ channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "win-64"]
 
 [tool.pixi.dependencies]
-python = ">=3.11"
+python = "3.11.*"
 
 [tool.pixi.pypi-dependencies]
 # DEV
 ipykernel = "*"
-s2gos-common = { path = "./ext/s2gos-controller/s2gos-common", editable = true }
-s2gos-client = { path = "./ext/s2gos-controller/s2gos-client", editable = true }
-s2gos-server = { path = "./ext/s2gos-controller/s2gos-server", editable = true }
-s2gos-scene-description = { path = "./ext/s2gos-scene-description", editable = true }
-s2gos-simulator = { path = "./ext/s2gos-simulator", editable = true }
-s2gos-generator = { path = "./ext/s2gos-generator", editable = true }
+s2gos-common = { path = "./packages/s2gos-controller/s2gos-common", editable = true }
+s2gos-client = { path = "./packages/s2gos-controller/s2gos-client", editable = true }
+s2gos-server = { path = "./packages/s2gos-controller/s2gos-server", editable = true }
+
+s2gos-utils = { path = "./packages/s2gos-utils", editable = true }
+s2gos-simulator = { path = "./packages/s2gos-simulator", editable = true }
+s2gos-generator = { path = "./packages/s2gos-generator", editable = true }
+
 s2gos-example-app = { path = ".", editable = true }
 
 [project.optional-dependencies]

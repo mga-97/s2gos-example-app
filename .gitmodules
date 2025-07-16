@@ -1,3 +1,16 @@
-[submodule "ext/s2gos-controller"]
-	path = ext/s2gos-controller
-	url = https://github.com/s2gos-dev/s2gos-controller.git
+[submodule "packages/s2gos-controller"]
+    path = packages/s2gos-controller
+    url = https://github.com/mga-97/s2gos-controller.git
+	branch = compatibility
+[submodule "packages/s2gos-generator"]
+	path = packages/s2gos-generator
+	url = git@github.com:mga-97/s2gos-generator.git
+	branch = dev
+[submodule "packages/s2gos-simulator"]
+	path = packages/s2gos-simulator
+	url = git@github.com:mga-97/s2gos-simulator.git
+	branch = dev
+[submodule "packages/s2gos-utils"]
+	path = packages/s2gos-utils
+	url = git@github.com:s2gos-dev/s2gos-utils.git
+	branch = dev
