@@ -4350,7 +4350,7 @@ packages:
 - pypi: .
   name: s2gos-example-app
   version: 0.0.1
-  sha256: 7da74b2e734f4aa8cb84da43dd3dcc69112f212f187562b0baa44cd94a958543
+  sha256: abb6629a470e1aa8cf824e7a85c800be22c81df14f65900f4bba73967ea206b6
   requires_dist:
   - pytest ; extra == 'test'
   - mkdocs ; extra == 'docs'
@@ -4359,10 +4359,9 @@ packages:
 - pypi: ./packages/s2gos-generator
   name: s2gos-generator
   version: 0.0.1
-  sha256: 9a7417962827498e21ea61bd51c8a21189bd175a3c691c596fb145fa0de06624
+  sha256: b73bb81d74b29ef2a77cba03c1e0b6c8c1abb24f6de12d65edad6aca6518a0f9
   requires_dist:
   - s2gos-utils
-  - pydantic>=2.0.0
   - geopandas>=0.13.0
   - xarray>=2023.1.0
   - pyproj>=3.4.0

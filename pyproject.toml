@@ -22,6 +22,7 @@ python = "3.11.*"
 
 [tool.pixi.pypi-dependencies]
 # DEV
+debugpy = "*"
 ipykernel = "*"
 s2gos-common = { path = "./packages/s2gos-controller/s2gos-common", editable = true }
 s2gos-client = { path = "./packages/s2gos-controller/s2gos-client", editable = true }
@@ -46,6 +47,7 @@ test = { features = ["test"], solve-group = "default" }
 [tool.pixi.tasks]
 # Development tasks
 dev = { cmd = "s2gos-server dev --service=s2gos_example_app.app:service" }
+debug = { cmd = "python -m debugpy --wait-for-client --listen 0.0.0.0:5678 -m uvicorn s2gos_server.main:app --host 127.0.0.1 --port 8008", env = { S2GOS_SERVICE = "s2gos_example_app.app:service" } }
 test = "pytest src/tests/"
 lint = "ruff check src/"
 format = "ruff format src/"
